@@ -175,21 +175,21 @@
 
 <script>
 function ComputeFare(type){
-    var pickupKM = Number(document.getElementById("pickup").value);
-    var dropoffKM = Number(document.getElementById("dropoff").value);
+    let pickupKM = Number(document.getElementById("pickup").value);
+    let dropoffKM = Number(document.getElementById("dropoff").value);
 
-    if(pickupKM === dropoffKM){
+    if(pickupKM == dropoffKM){
         alert("Points cannot be chosen");
         return;
     }
 
    
-    var distance = Math.abs(dropoffKM - pickupKM);
+    let distance = Math.abs(dropoffKM - pickupKM);
 
-    var baseFare = 50; 
-    var perKM = 15;    
-    var baseKM = 2;
-    var total;
+    let baseFare = 50; 
+    let perKM = 15;    
+    let baseKM = 2;
+    let total;
 
     if(distance <= baseKM){
         total = baseFare;
