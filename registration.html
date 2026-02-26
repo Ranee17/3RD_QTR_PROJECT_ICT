@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Q3 Skills Test</title>
+<title>Registration</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,13 +29,11 @@
             <a class="nav-link" href="index.html"> HOME </a>
         </li>
         <li class="nav-item"> 
-            <a class="nav-link" href="about.html"> FARE MANTRIX </a>
+            <a class="nav-link" href="farematrix.html"> FARE MANTRIX </a>
         </li>
+        
         <li class="nav-item"> 
-            <a class="nav-link" href="about.html"> SCHEDULE </a>
-        </li>
-        <li class="nav-item"> 
-            <a class="nav-link" href="about.html"> HELP </a>
+            <a class="nav-link" href="help.html"> HELP </a>
         </li>
     </ul>
 
@@ -228,17 +226,23 @@ nav{
    
     <div class="right">
         First Name:
-        <input type="text" id="name" placeholder="Enter"> 
+        <input type="text" id="name" placeholder="Enter">
+
         Last Name:
          <input type="text" id="lastName" placeholder="Enter">
+
         Age:
-        <input type="Age" id="age" placeholder="Enter">
+        <input type="number" id="age" placeholder="Enter">
+
         Contact Number:
-        <input type="number" id="number" placeholder="Enter">
+        <input type="text" id="number" placeholder="Enter">
+
         Email:
         <input type="Email" id="Email" placeholder="Enter">
+
         Username:
         <input type="user" id="user" placeholder="Enter">
+
         Password:
         <input type="pass" id="pass" placeholder="Enter">
 
@@ -247,7 +251,7 @@ nav{
             I accept the Terms of Use and Privacy Policy
         </label>
 
-        <button class="createBtn" onclick="createAccount()">
+        <button class="createBtn" onclick="location.href='confirmation.html'" >
             Create my account
         </button>
 
